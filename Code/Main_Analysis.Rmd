@@ -72,7 +72,8 @@ if (file.exists("../Data/Output/RealModel.RData")){
   realmodel <- siena07(controls, data = glasgowdata, effects = effects)
   
   # Second Observations
-  simulation_controls <- sienaAlgorithmCreate(n3 = 500, nsub = 0, seed = 2809)
+  set.seed(2809)
+  simulation_controls <- sienaAlgorithmCreate(n3 = 500, nsub = 0)
   simulations <- siena07(simulation_controls, data = glasgowdata, effects = effects, 
                    returnDeps = T, prevAns = realmodel)
   
@@ -91,7 +92,7 @@ if (file.exists("../Data/Output/RealModel.RData")){
 # Random Error Simulation
 ## Perform simulation
 ```{r}
-n <- 500
+n <- 70
 neg_error <- c(0.1)
 pos_error <- 0
 
