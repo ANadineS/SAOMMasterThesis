@@ -18,14 +18,20 @@ NetworkSummary <- function(networklist){
 }
 
 AnalyzeOutput <- function(output, realmodel, n, error_combo){
+  stats_per_network <- vector("list", nrow(error_combo))
   
   for (i in 1:nrow(error_combo)){
-    indices <- ((i-1)*(n)+1):n*i
-    obs_1 <- lapply(output$original_networks[indices], function(arr) arr[,,1])
-    obs_2 <- lapply(output$original_networks[indices], function(arr) arr[,,2])
-    an_1 <- lapply(output$analyzed_networks[indices], function(arr) arr[,,1])
-    an_2 <- lapply(output$analyzed_networks[indices], function(arr) arr[,,2])
+    print(error_combo[i,])
+    indices <- ((i-1)*(n)+1):(n*i)
+    print(indices)
     
-    View(NetworkSummary(obs_2))
+    stats_error_combo <- list(
+      obs_1 = NetworkSummary(output$original_networks_1[indices]),
+      obs_2 = NetworkSummary(output$original_networks_2[indices]),
+      an_1 = NetworkSummary(lapply(output$analyzed_networks[indices], function(arr) arr[,,1])),
+      an_2 = NetworkSummary(lapply(output$analyzed_networks[indices], function(arr) arr[,,2]))
+    )
+    
+    stats_per_network[[i]] <- setNames(stats_error_combo, paste0("Error_", error_combo[i,1], "_", error_combo[i,2]))
   }
 }

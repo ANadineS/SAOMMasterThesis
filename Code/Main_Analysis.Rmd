@@ -49,8 +49,6 @@ sex2 <- coCovar(sex, centered = F)
 
 ## Creating Relevant Objects
 ```{r}
-set.seed(2809)
-
 controls <- sienaAlgorithmCreate(seed = 2809)
 
 # Creating "Real" SAOM model & second observations generated based on the second model
@@ -92,18 +90,30 @@ if (file.exists("../Data/Output/RealModel.RData")){
 # Random Error Simulation
 ## Perform simulation
 ```{r}
-n <- 70
-neg_error <- c(0.1)
+SafeSimulation <- function(x){
+  tryCatch({
+    SimulationRun(IntroduceError_Random, netwmatrices[[1]], second_observations[[x[1]]], sex2, controls, x[3], x[2], x)
+  }, error = function(e) {
+    print(paste("Error occurred in iteration", x[1]))
+    print(e)
+    print(traceback())
+    return(NULL)
+  })
+}
+
+n <- 500
+neg_error <- c(0.1, 0.2)
 pos_error <- 0
 
 simulation_element <- expand.grid(1:n, neg_error, pos_error)
 
-cl <- makeCluster(detectCores()-1)
-clusterExport(cl, c("SimulationRun", "IntroduceError_Random", "second_observations", "netwmatrices", "sex2", "controls", "simulation_element", "ChangeCoding"))
+cl <- makeCluster(detectCores())
+clusterExport(cl, c("SafeSimulation", "SimulationRun", "IntroduceError_Random", "second_observations", "netwmatrices", "sex2", "controls", "simulation_element", "ChangeCoding"))
 
 clusterEvalQ(cl, {library(igraph); library(RSiena)})
 
-random_output <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN = function(x) SimulationRun(IntroduceError_Random, netwmatrices[[1]], second_observations[[x[1]]], sex2, controls, x[3], x[2]))
+random_output <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN = SafeSimulation)
+#random_output <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN = function(x) SimulationRun(IntroduceError_Random, netwmatrices[[1]], second_observations[[x[1]]], sex2, controls, x[3], x[2]))
 
 stopCluster(cl)
 
@@ -113,7 +123,8 @@ saveRDS(random_output, "../Data/Output/01_Random_Raw_Output.RData")
 ## Output Formatting
 ```{r}
 random_output <- readRDS("../Data/Output/01_Random_Raw_Output.RData")
-random_formatted <- FormatOutput(random_output)
+clean <- Filter(Negate(is.null), random_output)
+random_formatted <- FormatOutput(clean)
 saveRDS(random_formatted, "../Data/Output/01_Random_Formatted_Output.RData")
 ```
 

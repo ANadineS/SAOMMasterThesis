@@ -4,7 +4,8 @@
 
 FormatOutput <- function(output){
   results <- list()
-  results$original_networks <- lapply(output, "[[", "original_networks")
+  results$original_networks_1 <- lapply(output, "[[", "original_networks_1")
+  results$original_networks_2 <- lapply(output, "[[", "original_networks_2")
   results$analyzed_networks <- lapply(output, "[[", "analyzed_networks")
   results$actualchange <- lapply(output, "[[", "actualchange")
   results$analyzedchange <- lapply(output, "[[", "original_networks")
