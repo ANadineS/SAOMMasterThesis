@@ -70,15 +70,13 @@ if (file.exists("../Data/Output/RealModel.RData")){
   realmodel <- siena07(controls, data = glasgowdata, effects = effects)
   
   # Second Observations
-  set.seed(2809)
-  simulation_controls <- sienaAlgorithmCreate(n3 = 500, nsub = 0)
+  simulation_controls <- sienaAlgorithmCreate(seed = 2809, n3 = 500, nsub = 0)
   simulations <- siena07(simulation_controls, data = glasgowdata, effects = effects, 
                    returnDeps = T, prevAns = realmodel)
   
   second_observations_list <- lapply(lapply(lapply(simulations$sims, "[[", "Data1"), "[[", "friendship"), 
                                 "[[", "1")
-  second_observations <- lapply(second_observations_list, function(x)
-                                as_adjacency_matrix(graph_from_edgelist(as.matrix(x[,-3]), directed = T)))
+  second_observations <- lapply(second_observations_list, EdgelistToMatrix))
   
   
   saveRDS(realmodel, "../Data/Output/RealModel.RData")
@@ -101,13 +99,13 @@ SafeSimulation <- function(x){
   })
 }
 
-n <- 500
-neg_error <- c(0.1, 0.2)
+n <- 100
+neg_error <- c(0.1)
 pos_error <- 0
 
 simulation_element <- expand.grid(1:n, neg_error, pos_error)
 
-cl <- makeCluster(detectCores())
+cl <- makeCluster(detectCores(), outfile = "logs.txt")
 clusterExport(cl, c("SafeSimulation", "SimulationRun", "IntroduceError_Random", "second_observations", "netwmatrices", "sex2", "controls", "simulation_element", "ChangeCoding"))
 
 clusterEvalQ(cl, {library(igraph); library(RSiena)})
@@ -117,7 +115,7 @@ random_output <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN
 
 stopCluster(cl)
 
-saveRDS(random_output, "../Data/Output/01_Random_Raw_Output.RData")
+saveRDS(random_output, "../Data/Output/01_Random_Raw_Output2.RData")
 ```
 
 ## Output Formatting
@@ -131,4 +129,14 @@ saveRDS(random_formatted, "../Data/Output/01_Random_Formatted_Output.RData")
 ## Analysis
 ```{r}
 error_combo <- expand.grid(neg_error, pos_error)
+
+count <- 0
+for(i in 1:length(second_observations)){
+  a <- nrow(second_observations[[i]])
+  if (a == 132){
+    count <- count + 1
+  }
+}
+
+print(count)
 ```

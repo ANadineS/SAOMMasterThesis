@@ -47,3 +47,14 @@ jaccard <- function(net1,net2) {
   tbl <- table(c(0,0,1,1,net1),c(0,1,0,1,net2))-1
   return(tbl[2,2]/(tbl[1,2]+tbl[2,1]+tbl[2,2]))
 }
+
+EdgelistToMatrix <- function(edgelist, n = 133){
+  graph <- graph_from_edgelist(as.matrix(edgelist[,-3]), directed = T)
+  adj_matrix <- as.matrix(get.adjacency(graph, sparse = F))
+  #colnames(adj_matrix) <- rownames(adj_matrix) <- 1:n
+  
+  adj_matrix_all <- matrix(0, nrow = n, ncol = n, dimnames = list(1:n, 1:n))
+  adj_matrix_all[row.names(adj_matrix), colnames(adj_matrix)] <- adj_matrix
+  
+  return(adj_matrix)
+}
