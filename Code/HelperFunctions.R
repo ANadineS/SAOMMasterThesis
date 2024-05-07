@@ -48,13 +48,19 @@ jaccard <- function(net1,net2) {
   return(tbl[2,2]/(tbl[1,2]+tbl[2,1]+tbl[2,2]))
 }
 
+
+### Function to transform edgelists to adjacency matrices
 EdgelistToMatrix <- function(edgelist, n = 133){
-  graph <- graph_from_edgelist(as.matrix(edgelist[,-3]), directed = T)
-  adj_matrix <- as.matrix(get.adjacency(graph, sparse = F))
-  #colnames(adj_matrix) <- rownames(adj_matrix) <- 1:n
   
-  adj_matrix_all <- matrix(0, nrow = n, ncol = n, dimnames = list(1:n, 1:n))
-  adj_matrix_all[row.names(adj_matrix), colnames(adj_matrix)] <- adj_matrix
+  # Add self-loops to edgelist to make sure isolated actors are also included
+  self_loops <- matrix(c(1:133, 1:133, rep(1, 133)), ncol = 3, nrow = 133, byrow = F)
+  final_edgelist <- rbind(self_loops, edgelist)
+  
+  # Transform edgelist to adjacency matrix
+  graph <- graph_from_edgelist(as.matrix(final_edgelist[,-3]), directed = T)
+  adj_matrix <- as.matrix(as_adjacency_matrix(graph))
+  diag(adj_matrix) <- 0 # Remove self-loops
   
   return(adj_matrix)
 }
+

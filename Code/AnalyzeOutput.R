@@ -23,7 +23,6 @@ AnalyzeOutput <- function(output, realmodel, n, error_combo){
   for (i in 1:nrow(error_combo)){
     print(error_combo[i,])
     indices <- ((i-1)*(n)+1):(n*i)
-    print(indices)
     
     stats_error_combo <- list(
       obs_1 = NetworkSummary(output$original_networks_1[indices]),
