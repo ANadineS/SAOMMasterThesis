@@ -17,24 +17,24 @@ NetworkSummary <- function(networklist){
   return(netwstats)
 }
 
-SummarizeParameters <- function(theta, p, error_combo, realmodel){
-  print(is(p))
+SummarizeParameters <- function(theta, se, error_combo, realmodel){
   theta_to_use <- theta[theta$Error_Neg == error_combo[1] & theta$Error_Pos == error_combo[2], 1:9]
-  p_to_use <- p[p$Error_Neg == error_combo[1] & p$Error_Pos == error_combo[2], 1:9] 
+  se_to_use <- se[se$Error_Neg == error_combo[1] & se$Error_Pos == error_combo[2], 1:9] 
   realtheta <- c(realmodel$rate, realmodel$theta)
-  
+
   stat <- data.frame(
     Error_Neg = rep(error_combo[1], 9),
     Error_Pos = rep(error_combo[2], 9),
+    Real_Theta = realtheta,
     Theta = sapply(theta_to_use, mean),
     Bias = colMeans(theta_to_use) - realtheta,
     Variance = sapply(theta_to_use, var),
     MSE = colMeans((theta_to_use - realtheta)^2),
-    p = colMeans(p_to_use),
     Coverage = sapply(1:9, function(i) {
-      mean((realtheta[i] >= quantile(theta_to_use[,i], c(0.025, 0.975))[1]) &
-             (realtheta[i] <= quantile(theta_to_use[,i], c(0.025, 0.975))[2]))
-    }),
+      low <- theta_to_use[,i] - qnorm(0.975)*se_to_use[,i]
+      high <- theta_to_use[,i] + qnorm(0.975)*se_to_use[,i]
+      mean(realtheta[i] >= low & realtheta[i] <= high)
+    })
   )
   
   return(stat)
@@ -46,6 +46,7 @@ AnalyzeOutput <- function(output, realmodel, n, error_combo){
   for (i in 1:nrow(error_combo)){
     indices <- ((i-1)*(n)+1):(n*i) # indices belonging to the error-combination
     
+    # Calculate network statistics for each network
     stats_error_combo <- list(
       obs_1 = NetworkSummary(output$original_networks_1[indices]),
       obs_2 = NetworkSummary(output$original_networks_2[indices]),
@@ -57,6 +58,7 @@ AnalyzeOutput <- function(output, realmodel, n, error_combo){
     names(stats_per_network)[i] <- paste0(error_combo[i,1], "_", error_combo[i,2])
   }
   
+  # Summarize network statistics per error combination & network type
   summary_networkstats_mean <- lapply(c(1:nrow(error_combo)), function(x) {
     stats <- data.frame(
       Error_Neg = rep(error_combo[x,1], 4),
@@ -68,5 +70,12 @@ AnalyzeOutput <- function(output, realmodel, n, error_combo){
     )
   }) %>% do.call(rbind, .)
   
-  summary_theta_mean <- lapply(error_combo, function(x) SummarizeParameters(output$theta, output$p, x, realmodel))
+  # Summarize SAOM results per error combination
+  summary_theta_mean <- apply(error_combo, 1, function(x) 
+    SummarizeParameters(output$theta, output$se, x, realmodel)) %>%
+    do.call(rbind, .)
+  
+  # Combine results
+  results <- list(stats_per_network, summary_networkstats_mean, summar_theta_mean)
+  return(results)
 }
