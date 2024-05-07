@@ -12,8 +12,19 @@ FormatOutput <- function(output){
   results$error_neg <- sapply(output, "[[", "error_neg")
   results$error_pos <- sapply(output, "[[", "error_pos")
   results$error_in_change <- sapply(output, "[[", "error_in_change")
+  #results$tconv.max <- sapply(output, "[[", "tconv.max")
   
   results$results <- lapply(output, "[[", "results")
+  
+  #results$tconv <- as.data.frame(do.call(rbind, lapply(output, "[[", "tconv"))) %>%
+   # cbind(., sapply(output, "[[", "error_neg"), sapply(output, "[[", "error_pos"), 
+    #      sapply(output, "[[", "error_in_change"))
+  
+  #colnames(results$tconv) <-  
+   # c("Density", "Reciprocity", "Transitivity-Reciprocity", "3-cycles", "GWESP", 
+    #  "Indegree Popularity", "Indegree Activity", "Homophily-Sex", "Error_Neg", 
+     # "Error_Pos", "Error_Total")
+  
   results$theta <- as.data.frame(do.call(rbind, lapply(output, "[[", "theta"))) %>%
     cbind(., sapply(output, "[[", "error_neg"), sapply(output, "[[", "error_pos"), 
           sapply(output, "[[", "error_in_change"))
@@ -28,7 +39,12 @@ FormatOutput <- function(output){
       "Error_Pos", "Error_Total")
   
   results$wald <- results$theta[,-c(10:12)]/results$se[,-c(10:12)]
-  results$p <- apply(as.matrix(results$wald), c(1,2), function(t) pnorm(abs(t), lower.tail = F))
+  results$p <- apply(as.matrix(results$wald), c(1,2), function(t) pnorm(abs(t), lower.tail = F)) %>%
+    cbind(., sapply(output, "[[", "error_neg"), sapply(output, "[[", "error_pos"), 
+          sapply(output, "[[", "error_in_change")) %>%
+    as.data.frame()
+  
+  colnames(results$p)[10:12] <- c("Error_Neg", "Error_Pos", "Error_Total")
   
   return(results)
 }

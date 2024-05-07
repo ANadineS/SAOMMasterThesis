@@ -120,7 +120,7 @@ saveRDS(random_output, "../Data/Output/01_Random_Raw_Output2.RData")
 
 ## Output Formatting
 ```{r}
-random_output <- readRDS("../Data/Output/01_Random_Raw_Output.RData")
+random_output <- readRDS("../Data/Output/01_Random_Raw_Output2.RData")
 random_formatted <- FormatOutput(random_output)
 saveRDS(random_formatted, "../Data/Output/01_Random_Formatted_Output.RData")
 ```

@@ -33,6 +33,8 @@ SimulationRun <- function(IntroduceError_X, obs1, obs2, sex, controls, error_pos
   output$theta <- c(results$rate, results$theta)
   output$se <- c(results$vrate, results$se)
   output$el <- simulation_element
+  output$tconv_max <- results$tconv.max
+  output$tconv <- results$tconv
   
   return(output)
 }
