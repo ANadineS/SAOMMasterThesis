@@ -30,6 +30,7 @@ load("../Data/Input/Glasgow-demographic.RData")
 source("./SimulationRun.R")
 source("./HelperFunctions.R")
 source("./FormatOutput.R")
+source("./AnalyzeOutput.R")
 ```
 
 ## Data Preparation
@@ -86,6 +87,16 @@ if (file.exists("../Data/Output/RealModel.RData")){
 ```
 
 # Random Error Simulation
+## Settings for simulation
+
+```{r}
+n <- 500
+neg_error <- c(0.1, 0.2)
+pos_error <- 0
+
+simulation_element <- expand.grid(1:n, neg_error, pos_error)
+```
+
 ## Perform simulation
 ```{r}
 SafeSimulation <- function(x){
@@ -99,19 +110,12 @@ SafeSimulation <- function(x){
   })
 }
 
-n <- 500
-neg_error <- c(0.1, 0.2)
-pos_error <- 0
-
-simulation_element <- expand.grid(1:n, neg_error, pos_error)
-
 cl <- makeCluster(detectCores()-1, outfile = "logs.txt")
 clusterExport(cl, c("SafeSimulation", "SimulationRun", "IntroduceError_Random", "second_observations", "netwmatrices", "sex2", "controls", "simulation_element", "ChangeCoding"))
 
 clusterEvalQ(cl, {library(igraph); library(RSiena)})
 
 random_output <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN = SafeSimulation)
-#random_output <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN = function(x) SimulationRun(IntroduceError_Random, netwmatrices[[1]], second_observations[[x[1]]], sex2, controls, x[3], x[2]))
 
 stopCluster(cl)
 
@@ -128,4 +132,5 @@ saveRDS(random_formatted, "../Data/Output/01_Random_Formatted_Output.RData")
 ## Analysis
 ```{r}
 error_combo <- expand.grid(neg_error, pos_error)
+random_results <- AnalyzeOutput(random_formatted, realmodel, n, error_combo)
 ```
