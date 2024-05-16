@@ -20,4 +20,4 @@ random_output <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN
 
 stopCluster(cl)
 
-saveRDS(random_output, "../Data/Output/01_Random_Raw_Output2.RData")
+saveRDS(random_output, "../Data/Output/01_Random_Raw_Output.RData")

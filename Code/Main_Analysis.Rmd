@@ -90,13 +90,15 @@ if (file.exists("../Data/Output/RealModel.RData")){
 ## Settings for simulation
 
 ```{r}
-n <- 10
-neg_error <- c(0.05, 0.1, 0.2, 0.3, 0.4)
-pos_error <- c(0, 0.1)
+n <- 1500
+neg_error <- c(0.05, 0.1, 0.2, 0.25)
+pos_error <- c(0, 0.05)
 
 simulation_element <- expand.grid(1:n, neg_error, pos_error)
 
 simulation_input <- list(simulation_element, second_observations, netwmatrices, sex2, controls)
+names(simulation_input) <- c("simulation_element", "second_observations", 
+                             "netwmatrices", "sex2", "controls")
 save("simulation_input", file = "../Data/Input/InputSimulation.RData")
 ```
 
