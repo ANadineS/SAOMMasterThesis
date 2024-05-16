@@ -38,3 +38,14 @@ SimulationRun <- function(IntroduceError_X, obs1, obs2, sex, controls, error_pos
   
   return(output)
 }
+
+SafeSimulation <- function(x){
+  tryCatch({
+    SimulationRun(IntroduceError_Random, netwmatrices[[1]], second_observations[[x[1]]], sex2, controls, x[3], x[2], x)
+  }, error = function(e) {
+    print(paste("Error occurred in iteration", x[1]))
+    print(e)
+    print(traceback())
+    return(NULL)
+  })
+}

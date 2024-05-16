@@ -28,6 +28,7 @@ SummarizeParameters <- function(theta, se, error_combo, realmodel){
   
   # Calculate the statistics on data belonging to a error combination
   stat <- data.frame(
+    Parameter = colnames(theta_to_use)[1:9],
     Error_Neg = rep(error_combo[1], 9),
     Error_Pos = rep(error_combo[2], 9),
     Real_Theta = realtheta,
@@ -48,6 +49,7 @@ SummarizeParameters <- function(theta, se, error_combo, realmodel){
       mean(wald <= qnorm(0.025) | wald >= qnorm(0.975))
     })
   )
+  rownames(stat) <- NULL
   
   return(stat)
 }

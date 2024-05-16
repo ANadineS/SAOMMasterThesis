@@ -13688,3 +13688,1173 @@ The following object is masked from 'package:base':
 7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
   effectName include fix   test  initialValue parm
 1 same sex2  TRUE    FALSE FALSE          0   0   
+starting worker pid=15996 on localhost:11156 at 22:42:59.390
+starting worker pid=26152 on localhost:11156 at 22:42:59.881
+starting worker pid=4228 on localhost:11156 at 22:43:00.264
+starting worker pid=23344 on localhost:11156 at 22:43:00.650
+starting worker pid=11156 on localhost:11156 at 22:43:01.030
+starting worker pid=3420 on localhost:11156 at 22:43:01.389
+starting worker pid=18724 on localhost:11156 at 22:43:01.901
+
+Attaching package: 'igraph'
+
+
+Attaching package: 'igraph'
+
+
+Attaching package: 'igraph'
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+
+Attaching package: 'igraph'
+
+The following object is masked from 'package:base':
+
+    union
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following object is masked from 'package:base':
+
+    union
+
+The following object is masked from 'package:base':
+
+    union
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following object is masked from 'package:base':
+
+    union
+
+
+Attaching package: 'igraph'
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+
+Attaching package: 'igraph'
+
+
+Attaching package: 'igraph'
+
+The following object is masked from 'package:base':
+
+    union
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following object is masked from 'package:base':
+
+    union
+
+The following object is masked from 'package:base':
+
+    union
+
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.65234    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+starting worker pid=16696 on localhost:11884 at 12:02:06.337
+starting worker pid=23496 on localhost:11884 at 12:02:06.501
+starting worker pid=16168 on localhost:11884 at 12:02:06.722
+starting worker pid=3332 on localhost:11884 at 12:02:06.887
+starting worker pid=3796 on localhost:11884 at 12:02:07.125
+starting worker pid=12784 on localhost:11884 at 12:02:07.306
+starting worker pid=17736 on localhost:11884 at 12:02:07.463
+
+Attaching package: 'igraph'
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following object is masked from 'package:base':
+
+    union
+
+
+Attaching package: 'igraph'
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+
+Attaching package: 'igraph'
+
+The following object is masked from 'package:base':
+
+    union
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following object is masked from 'package:base':
+
+    union
+
+
+Attaching package: 'igraph'
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+
+Attaching package: 'igraph'
+
+The following object is masked from 'package:base':
+
+    union
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following object is masked from 'package:base':
+
+    union
+
+
+Attaching package: 'igraph'
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following object is masked from 'package:base':
+
+    union
+
+
+Attaching package: 'igraph'
+
+The following objects are masked from 'package:stats':
+
+    decompose, spectrum
+
+The following object is masked from 'package:base':
+
+    union
+
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.63291    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000   effectName                  include fix   test ree - activity         TRUE    initialValue FALSE parm FALSE
+1    0.00000   outdegree (density)          0   TRUE   
+ FALSE FALSE   -1.67345    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.68126    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 effectName                  indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         outdegree (density)         TRUE    FALSE   FALSE    0.00000    0  E
+   -0.98028    0  
+2 effectName                  TRUE    FALSEde FALSE test     0.00000    0  ialValue parm
+1 transitive recipr. triplets TRUE   ee (density)         FALSE   FALSE    0.00000    0  .98532  
+4  
+2 3-cycles                    TRUE   city                 FALSE   FALSE FALSE    0.00000    0  .00000  
+5  
+3 GWESP I -> K -> J (#)       TRUE   ive recipr. triplets FALSE   FALSE FALSE    0.00000   69  .00000    0   indegree - popularity      
+4 TRUE    3-cycles                    FALSE    0.00000    0  
+7LSE FALSE    0.00000  ctivity          0     
+5LSE FALSE GWESP I -> K -> J (#)          0.00000    0      FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.77456    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 effectName includeive recipr. triplets fix     FALSE test  FALSEalValue parm    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000   effectName
+5 include  0   0   P I -> K -> J (#)       fix   T test  FALSEalValue parm
+1LSE    0.00000   69      FALSE FALSE          0   0   gree - popularity      
+ TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.02448    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.78413    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.7374    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.63623    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.65094    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.6458    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.7904    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.72763    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.60254    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.77601    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.71884    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.59121    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.58343    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.75614    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.68719    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.61892    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.63486    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.72326    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.74635    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.79435    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.69834    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.66439    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.74756    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -0.9696    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.71376    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.62931    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.73704    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.67446    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.72069    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.60944    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.7322    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.67551    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.5407    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.67723    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.72414    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.71483    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.60133    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE     -1.799    0  
+2 reciprocity                 TRUE    FALSE FALSE      0.000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE      0.000    0  
+4 3-cycles                    TRUE    FALSE FALSE      0.000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE      0.000   69  
+6 indegree - popularity       TRUE    FALSE FALSE      0.000    0  
+7 indegree - activity         TRUE    FALSE FALSE      0.000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.96052    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.69724    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.65482    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.77821    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.66833    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.6503    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.78778    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.6463    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.6631    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.02383    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.61801    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98811    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.64701    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -0.9973    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98469    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.97766    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.99422    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.0075    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98685    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98009    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.00454    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.02189    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.99306    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98001    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.0159    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.99774    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.96969    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.99522    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.97659    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -0.9836    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.99119    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.01891    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98599    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.00436    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.03176    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.99835    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98421    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.03858    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98814    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.00849    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.02778    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.01125    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.99115    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.02105    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.98741    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.03732    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.97677    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.96613    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.05046    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -0.99036    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.00125    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE    -1.0418    0  
+2 reciprocity                 TRUE    FALSE FALSE     0.0000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE     0.0000    0  
+4 3-cycles                    TRUE    FALSE FALSE     0.0000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE     0.0000   69  
+6 indegree - popularity       TRUE    FALSE FALSE     0.0000    0  
+7 indegree - activity         TRUE    FALSE FALSE     0.0000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.01631    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.02054    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.04371    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
+  effectName                  include fix   test  initialValue parm
+1 outdegree (density)         TRUE    FALSE FALSE   -1.01918    0  
+2 reciprocity                 TRUE    FALSE FALSE    0.00000    0  
+3 transitive recipr. triplets TRUE    FALSE FALSE    0.00000    0  
+4 3-cycles                    TRUE    FALSE FALSE    0.00000    0  
+5 GWESP I -> K -> J (#)       TRUE    FALSE FALSE    0.00000   69  
+6 indegree - popularity       TRUE    FALSE FALSE    0.00000    0  
+7 indegree - activity         TRUE    FALSE FALSE    0.00000    0  
+  effectName include fix   test  initialValue parm
+1 same sex2  TRUE    FALSE FALSE          0   0   
