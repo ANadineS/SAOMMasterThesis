@@ -21,6 +21,11 @@ library(RColorBrewer)
 library(GGally)
 library(reshape2)
 library(parallel)
+library(writexl)
+library(stats)
+library(car)
+library(ResourceSelection)
+library(RColorBrewer)
 
 # Load Data
 load("../Data/Input/Glasgow-friendship.RData")
@@ -31,6 +36,10 @@ source("./SimulationRun.R")
 source("./HelperFunctions.R")
 source("./FormatOutput.R")
 source("./AnalyzeOutput.R")
+source("./Graphs.R")
+
+# Set seed
+set.seed(3363430)
 ```
 
 ## Data Preparation
@@ -50,7 +59,7 @@ sex2 <- coCovar(sex, centered = F)
 
 ## Creating Relevant Objects
 ```{r}
-controls <- sienaAlgorithmCreate(seed = 2809)
+controls <- sienaAlgorithmCreate(seed = 2809, cond = FALSE)
 
 # Creating "Real" SAOM model & second observations generated based on the second model
 if (file.exists("../Data/Output/RealModel.RData")){
@@ -71,7 +80,7 @@ if (file.exists("../Data/Output/RealModel.RData")){
   realmodel <- siena07(controls, data = glasgowdata, effects = effects)
   
   # Second Observations
-  simulation_controls <- sienaAlgorithmCreate(seed = 2809, n3 = 500, nsub = 0)
+  simulation_controls <- sienaAlgorithmCreate(seed = 2809, n3 = 1000, nsub = 0)
   simulations <- siena07(simulation_controls, data = glasgowdata, effects = effects, 
                    returnDeps = T, prevAns = realmodel)
   
@@ -88,49 +97,211 @@ if (file.exists("../Data/Output/RealModel.RData")){
 
 # Random Error Simulation
 ## Settings for simulation
-
 ```{r}
-n <- 500
-neg_error <- c(0.1, 0.2)
-pos_error <- 0
+n <- 1000
+neg_error <- c(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3)
+pos_error <- c(0, 0.001)
 
 simulation_element <- expand.grid(1:n, neg_error, pos_error)
+
+simulation_input <- list(simulation_element, second_observations, netwmatrices, sex2, controls)
+names(simulation_input) <- c("simulation_element", "second_observations", 
+                             "netwmatrices", "sex2", "controls")
+save("simulation_input", file = "../Data/Input/InputSimulation.RData")
 ```
 
-## Perform simulation
+## Perform simulation [full version in ExecuteSimulationParallel.R for Supercomputer]
 ```{r}
-SafeSimulation <- function(x){
-  tryCatch({
-    SimulationRun(IntroduceError_Random, netwmatrices[[1]], second_observations[[x[1]]], sex2, controls, x[3], x[2], x)
-  }, error = function(e) {
-    print(paste("Error occurred in iteration", x[1]))
-    print(e)
-    print(traceback())
-    return(NULL)
-  })
-}
+# Actual simulation executed on supercomputer with ExecuteSimulationParallel.R
+# and SimulationRun.R
 
 cl <- makeCluster(detectCores()-1, outfile = "logs.txt")
 clusterExport(cl, c("SafeSimulation", "SimulationRun", "IntroduceError_Random", "second_observations", "netwmatrices", "sex2", "controls", "simulation_element", "ChangeCoding"))
 
 clusterEvalQ(cl, {library(igraph); library(RSiena)})
 
-random_output <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN = SafeSimulation)
+random_outputTest <- parApply(cl, MARGIN = 1, X = as.matrix(simulation_element), FUN = function(simulation_element) 
+    SimulationRun(IntroduceError_Random, netwmatrices[[1]], second_observations[[simulation_element[1]]], sex2,
+                  controls, simulation_element))
 
 stopCluster(cl)
-
-saveRDS(random_output, "../Data/Output/01_Random_Raw_Output2.RData")
 ```
 
 ## Output Formatting
 ```{r}
-random_output <- readRDS("../Data/Output/01_Random_Raw_Output2.RData")
+random_output <- readRDS("../Data/Output/01_Random_Raw_Output.RData")
 random_formatted <- FormatOutput(random_output)
 saveRDS(random_formatted, "../Data/Output/01_Random_Formatted_Output.RData")
 ```
 
 ## Analysis
 ```{r}
+random_formatted <- readRDS("../Data/Output/01_Random_Formatted_Output.RData")
+
+# Create files with more structured results to analyze
 error_combo <- expand.grid(neg_error, pos_error)
-random_results <- AnalyzeOutput(random_formatted, realmodel, n, error_combo)
+random_results <- AnalyzeOutput(random_output, random_formatted, realmodel, n, error_combo)
+
+# Density graphs per parameter
+sapply(random_results$summary_theta$Parameter[1:9], function(x) 
+  SaveGraph(variable = x, error_pos = 0.001, directory = "../Results/Random/"))
+
+saveRDS(random_results, "../Data/Output/01_Random_Results.RData")
+
+write_xlsx(list(
+  NetworkStats = random_results$summary_networkstats,
+  Parameters = random_results$summary_theta,
+  Convergence = random_results$convergencestats),
+  "../Results/Random/Simulation_RandomErrors.xlsx")
+```
+
+### Further analysis - convergence & reruns
+```{r}
+random_results <- readRDS( "../Data/Output/01_Random_Results.RData")
+
+# Format convergence data
+convergence_data <- random_results$convergencestats[,1:3]
+colnames(convergence_data)[3] <- "not_converged"
+convergence_data$converged <- 1000-convergence_data$not_converged
+
+# Center error variable
+convergence_data$Error_Neg_C <- scale(convergence_data$Error_Neg, center = T, scale = F)
+
+# Estimate logistic regression
+convergence_model <- glm(cbind(converged, not_converged) ~ Error_Neg_C + Error_Pos,
+                         data = convergence_data, family = binomial)
+
+vif(convergence_model) # no issues with multicollinearity - max vif is 2
+
+# Compare estimated and fitted proportions of convergence
+convergence_data$fittedprob <- predict(convergence_model, type = "response")
+
+data <- convergence_data %>%
+  mutate(Convergence_Proportion = converged / (converged + not_converged))
+
+ggplot(data, aes(x = fittedprob, y = Convergence_Proportion)) +
+  geom_point() +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "red") +
+  labs(title = "Observed vs. Predicted Proportions",
+       x = "Predicted Proportion",
+       y = "Observed Proportion") +
+  theme_minimal()
+
+# No effect of errors on convergence
+
+# Look at number of reruns per error combo
+reruns_byerror_all <- as.data.frame(cbind(random_formatted$error_neg,
+                            random_formatted$error_pos, 
+                            random_formatted$convergence_reruns))
+colnames(reruns_byerror_all) <- c("Error_Neg", "Error_Pos", "Rerun")
+
+rerun_stats <- split(reruns_byerror_all, ~ as.factor(Error_Neg) + as.factor(Error_Pos)) %>%
+  sapply(., function(x) c(x$Error_Neg[1], x$Error_Pos[1], sum(x$Rerun))) %>%
+  t() %>%
+  as.data.frame()
+
+colnames(rerun_stats) <- c("Error_Neg", "Error_Pos", "Total_Reruns")
+
+reruns_succesful <- split(reruns_byerror_all[-random_results$noconvergence_indices,], 
+                          ~ as.factor(Error_Neg) + as.factor(Error_Pos)) %>%
+  sapply(., function(x) sum(x$Rerun)) 
+
+rerun_stats$Rerun_Success <- reruns_succesful
+rerun_stats <- rerun_stats %>%
+  mutate(Perc_Success = Rerun_Success/Total_Reruns,
+         Ok_Reruns_Needed = Rerun_Success/(1000 - (Total_Reruns - Rerun_Success)))
+
+rownames(rerun_stats) <- NULL
+
+write_xlsx(rerun_stats, "../Results/Random/RerunStats.xlsx")
+
+ # Check effect of error on nr of reruns needed
+rerun_stats$Error_Neg_C <- scale(rerun_stats$Error_Neg, center = T, scale = F)
+rerun_model <- glm(cbind(Rerun_Success, c(1000 - (Total_Reruns - Rerun_Success))) ~ Error_Neg_C * Error_Pos,
+                         data = rerun_stats, family = binomial)
+
+rerun_stats$fittedprob <- predict(rerun_model, type = "response")
+
+ggplot(rerun_stats, aes(x = fittedprob, y = Ok_Reruns_Needed)) + # Not a good fit
+  geom_point() +
+  geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "red") +
+  labs(title = "Observed vs. Predicted Proportions",
+       x = "Predicted Proportion",
+       y = "Observed Proportion") +
+  theme_minimal()
+```
+
+### Further analysis - SAOM summary graphs
+```{r}
+# No positive error
+# Coverage
+data <- random_results$summary_theta
+data$Parameter <- factor(data$Parameter, levels = unique(data$Parameter))
+ggplot(data[data$Error_Pos == 0,], 
+       aes(x = Error_Neg, y = Coverage, group = as.factor(Parameter), 
+           colour = as.factor(Parameter))) +
+  geom_point(size = 2) +
+  geom_line(linewidth = 1) +
+  theme_minimal() +
+  geom_hline(yintercept = 0.95) + 
+  scale_color_brewer(palette = "Paired") + 
+  labs(x = "Negative Error Rate", y = "Coverage", colour = "Parameter")
+
+# Relative bias
+ggplot(data[data$Error_Pos == 0,], 
+       aes(x = Error_Neg, y = Rel_Bias, group = as.factor(Parameter), 
+           colour = as.factor(Parameter))) +
+  geom_point(size = 2) +
+  geom_line(linewidth = 1) +
+  scale_color_brewer(palette = "Paired") + 
+  theme_minimal() +
+  labs(x = "Negative Error Rate", y = "Relative Bias", colour = "Parameter") +
+  lims(y = c(-20, 175))
+
+# Variance
+ggplot(data[data$Error_Pos == 0,], 
+       aes(x = Error_Neg, y = Variance, group = as.factor(Parameter), 
+           colour = as.factor(Parameter))) +
+  geom_point(size = 2) +
+  geom_line(linewidth = 1) +
+  scale_color_brewer(palette = "Paired") + 
+  theme_minimal() +
+  labs(x = "Negative Error Rate", y = "Variance", colour = "Parameter") +
+  lims(y = c(0, 0.5))
+
+# With positive error
+# Coverag
+ggplot(data[data$Error_Pos == 0.001,], 
+       aes(x = Error_Neg, y = Coverage, group = as.factor(Parameter), 
+           colour = as.factor(Parameter))) +
+  geom_point(size = 2) +
+  geom_line(linewidth = 1) +
+  theme_minimal() +
+  geom_hline(yintercept = 0.95) + 
+  scale_color_brewer(palette = "Paired") + 
+  labs(x = "Negative Error Rate", y = "Coverage", colour = "Parameter")
+
+# Relative bias
+data$Parameter <- factor(data$Parameter, levels = unique(data$Parameter))
+ggplot(data[data$Error_Pos == 0.001,], 
+       aes(x = Error_Neg, y = Rel_Bias, group = as.factor(Parameter), 
+           colour = as.factor(Parameter))) +
+  geom_point(size = 2) +
+  geom_line(linewidth = 1) +
+  scale_color_brewer(palette = "Paired") + 
+  theme_minimal() +
+  labs(x = "Negative Error Rate", y = "Relative Bias", colour = "Parameter") +
+  lims(y = c(-20, 175))
+
+# Variance
+data$Parameter <- factor(data$Parameter, levels = unique(data$Parameter))
+ggplot(data[data$Error_Pos == 0,], 
+       aes(x = Error_Neg, y = Variance, group = as.factor(Parameter), 
+           colour = as.factor(Parameter))) +
+  geom_point(size = 2) +
+  geom_line(linewidth = 1) +
+  scale_color_brewer(palette = "Paired") + 
+  theme_minimal() +
+  labs(x = "Negative Error Rate", y = "Variance", colour = "Parameter") +
+  lims(y = c(0, 0.5))
 ```
